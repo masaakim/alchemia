@@ -3,8 +3,12 @@ require "crass"
 
 class Alchemia
 
+  def self.parse(css)
+    Crass.parse(css, :preserve_comments => true)
+  end
+
   def initialize(css)
-    @tree = Crass.parse(css, :preserve_comments => true)
+    @tree = self.parse(css)
   end
 
   def use(plugin)
