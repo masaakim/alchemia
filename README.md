@@ -1,6 +1,6 @@
 # Alchemia
 
-TODO: Write a gem description
+Alchemia is CSS processing framework inspired by [Rework](https://github.com/reworkcss/rework).
 
 ## Installation
 
@@ -18,7 +18,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "alchemia"
+
+css = ".selector { padding: 10px; }"
+
+alchemia = Alchemia.new(css)
+
+# Include Alchemia plugins
+alchemia.use(awesome_plugin)
+
+# Stringify CSS AST
+alchemia.to_s
+```
+
+## API
+
+### Alchemia::use(plugin)
+Include Alchemia plugin.
+
+### Alchemia::to_s
+Stringify processed CSS AST.
+
 
 ## Contributing
 
