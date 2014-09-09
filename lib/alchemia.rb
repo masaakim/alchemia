@@ -12,6 +12,9 @@ class Alchemia
   end
 
   def use(plugin)
+    if plugin.class.superclass != Alchemia::Plugins::Base
+      raise "Alchemia plugin must extend Alchemia::Plugins::Base"
+    end
     plugin.process(@tree)
   end
 
