@@ -23,12 +23,13 @@ require "alchemia"
 
 css = ".selector { padding: 10px; }"
 
+# Initialize and parse css to AST
 alchemia = Alchemia.new(css)
 
 # Include Alchemia plugins
 alchemia.use(awesome_plugin)
 
-# Stringify CSS AST
+# Stringify Alchemia AST
 alchemia.to_s
 ```
 
