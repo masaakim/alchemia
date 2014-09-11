@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Alchemia::VERSION
   spec.authors       = ["Masaaki Morishita"]
   spec.email         = ["ikasama3.0@gmail.com"]
-  spec.summary       = %q{Alchemia: CSS processing framework}
+  spec.summary       = %q{Plugin framework for building AltCSS}
   spec.description   = %q{Plugin framework for building AltCSS in Ruby}
   spec.homepage      = ""
   spec.license       = "MIT"
