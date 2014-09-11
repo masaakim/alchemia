@@ -1,4 +1,5 @@
 require "alchemia/version"
+require "alchemia/plugins/base"
 require "crass"
 
 class Alchemia
@@ -8,7 +9,7 @@ class Alchemia
   end
 
   def initialize(css)
-    @tree = self.parse(css)
+    @tree = Crass.parse(css, :preserve_comments => true)
   end
 
   def use(plugin)
