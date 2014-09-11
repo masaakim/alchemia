@@ -1,6 +1,6 @@
 # Alchemia
 
-Alchemia is CSS processing framework inspired by [Rework](https://github.com/reworkcss/rework).
+Alchemia is Plugin framework for building AltCSS inspired by [Rework](https://github.com/reworkcss/rework).
 
 ## Installation
 
